@@ -1,0 +1,76 @@
+@font-face {
+    font-family: minionFont;
+    src: url(../assets/fonts/MinionCondensed.otf);
+  }
+
+body, html 
+{
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+  
+.brickBackground 
+{
+    background-image: url("../assets/img/mainImage.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#textBlock
+{
+    width: 18vw;
+    height: 20vh;
+    z-index: 5;
+    position: absolute;
+    top: 43vh;
+    left: 41vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+}
+
+h1
+{
+    font-family: minionFont;
+    font-weight: 500;
+}
+
+p
+{
+    font-family: minionFont;
+    font-weight: 100;
+}
+
+a
+{
+    color: white;
+}
+
+.textImages
+{
+    width: 15vw;
+    height: auto;
+    margin: 15px;
+}
+
+/* -----------------Scroll Bar Inside Text Box---------------*/
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #01337A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }
+
+/* -----------------Scroll Bar Inside Text Box---------------*/
