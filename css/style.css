@@ -10,10 +10,15 @@ body, html
     padding: 0;
     margin: 0;
 }
+
+#overlay
+{
+  display: none;
+}
   
 .brickBackground 
 {
-    background-image: url("../assets/img/mainImage.jpg");
+    background-image: url("../assets/img/brickBackground.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,14 +26,24 @@ body, html
     z-index: 1;
 }
 
+#plaque
+{
+  width: 35vw;
+  height: auto;
+  position: absolute;
+  left: 30.5vw;
+  top: 16vh;
+  z-index: 6;
+}
+
 #textBlock
 {
     width: 18vw;
-    height: 20vh;
-    z-index: 5;
+    height: 21vh;
+    z-index: 10;
     position: absolute;
-    top: 43vh;
-    left: 41vw;
+    top: 39vh;
+    left: 39vw;
     overflow-y: scroll;
     overflow-x: hidden;
     color: white;
@@ -38,12 +53,14 @@ h1
 {
     font-family: minionFont;
     font-weight: 500;
+    color: white;
 }
 
 p
 {
     font-family: minionFont;
     font-weight: 100;
+    color: white;
 }
 
 a
@@ -55,9 +72,40 @@ a
 {
     width: 15vw;
     height: auto;
-    margin: 15px;
+    margin: 35px;
 }
 
+.audioControls
+{
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+}
+
+.audioControls:hover
+{
+  cursor: pointer;
+}
+
+#playPause
+{
+  top: 85vh;
+  left: 3vw;
+}
+
+#rewind
+{
+  top: 85vh;
+  left: 9vw;
+}
+
+#fastForward
+{
+  top: 84vh;
+  left: 16vw;
+  width: 6vw;
+  height: auto;
+}
 /* -----------------Scroll Bar Inside Text Box---------------*/
 
 ::-webkit-scrollbar {
@@ -74,3 +122,137 @@ a
   }
 
 /* -----------------Scroll Bar Inside Text Box---------------*/
+
+.sliderOne
+{
+  position: absolute;
+  left: 23vw;
+  top: 1.5vh;
+  z-index: 4;
+}
+
+.sliderTwo
+{
+  position: absolute;
+  left: 25.5vw;
+  top: 5.5vh;
+  z-index: 5;
+}
+
+.sliderThree
+{
+  position: absolute;
+  left: 28vw;
+  top: 9.5vh;
+  z-index: 6;
+}
+
+
+#appearance1 .rs-range-color  {
+  background-color: #01337A;
+}
+#appearance1 .rs-handle:after  {
+  background-color: #000000;
+
+}
+#appearance1 .rs-handle{
+  width: 2.5vw !important;
+  height: 2.5vw !important;
+  background-image: url("../assets/img/chat3.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-90deg);
+  border-radius: 1000px;
+  outline: 0 none;
+  margin: -9px 0px 0px -15px !important;
+}
+#appearance1 .rs-border  {
+  border-color: rgba(0, 0,0, 0);
+}
+
+#appearance2 .rs-range-color  {
+  background-color: #01337A;
+}
+#appearance2 .rs-handle:after  {
+  background-color: rgba(0, 0,0, 0);
+}
+#appearance2 .rs-border  {
+  border-color: rgba(0, 0,0, 0);
+}
+#appearance2 .rs-handle{
+  width: 2.5vw !important;
+  height: 2.5vw !important;
+  background-image: url("../assets/img/door3.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-90deg);
+  border-radius: 1000px;
+  outline: 0 none;
+  margin: -9px 0px 0px -15px !important;
+}
+
+#appearance3 .rs-range-color  {
+  background-color: #01337A;
+}
+#appearance3 .rs-handle:after  {
+  background-color: #000000;
+}
+#appearance3 .rs-border  {
+  border-color: rgba(0, 0,0, 0);
+}
+#appearance3 .rs-handle{
+  width: 2.5vw !important;
+  height: 2.5vw !important;
+  background-image: url("../assets/img/saxophone3.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-90deg);
+  border-radius: 1000px;
+  outline: 0 none;
+  margin: -9px 0px 0px -15px !important;
+}
+
+.rs-tooltip-text
+{
+  display: block;
+}
+
+.rs-bg-color {
+  background-color: #FFF;
+}
+
+#appearance1 .rs-container
+{
+  width: 50vw !important;
+  height: 50vw !important;
+}
+
+#appearance2 .rs-container
+{
+  width: 45vw !important;
+  height: 45vw !important;
+}
+
+#appearance3 .rs-container
+{
+  width: 40vw !important;
+  height: 40vw !important;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  #overlay
+  {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.99); /* Black background with opacity */
+    z-index: 50; /* Specify a stack order in case you're using a different order for other elements */
+  }
+
+}
