@@ -9,15 +9,15 @@ playButton.addEventListener('click', playPause);
 // rewindButton.addEventListener('click', rewindAudio);
 
 audio = new Audio();
-audio.src = "../assets/sound/BrettBMSCreading.mp3";
+audio.src = "assets/sound/BrettBMSCreading.mp3";
 audio.loop = false;
 
 audio2 = new Audio();
-audio2.src = "../assets/sound/Background.mp3"; 
+audio2.src = "assets/sound/Background.mp3"; 
 audio2.loop = false;
 
 audio3 = new Audio();
-audio3.src = "../assets/sound/ZakesRecording.mp3";
+audio3.src = "assets/sound/ZakesRecording.mp3";
 audio3.loop = false;
 
 audio.volume = 0.5;
